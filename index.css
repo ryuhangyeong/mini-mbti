@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "NotoSans Bold";
+    src: url(./font/NotoSans-Bold.eot),
+        url(./font/NotoSans-Bold.woff2) format("woff2"),
+        url(./font/NotoSans-Bold.woff) format("woff"),
+        url(./font/NotoSans-Bold.otf) format("opentype"),
+        url(./font/NotoSans-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NotoSans Medium";
+    src: url(./font/NotoSans-Medium.eot),
+        url(./font/NotoSans-Medium.woff2) format("woff2"),
+        url(./font/NotoSans-Medium.woff) format("woff"),
+        url(./font/NotoSans-Medium.otf) format("opentype"),
+        url(./font/NotoSans-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NotoSans Light";
+    src: url(./font/NotoSans-Light.eot),
+        url(./font/NotoSans-Light.woff2) format("woff2"),
+        url(./font/NotoSans-Light.woff) format("woff"),
+        url(./font/NotoSans-Light.otf) format("opentype"),
+        url(./font/NotoSans-Light.ttf) format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+body, button, input, select, table, textarea {
+	font-family: -apple-system, BlinkMacSystemFont, "NotoSans Light", "Helvetica Neue", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", 나눔고딕, "Nanum Gothic", "Noto Sans KR", "Noto Sans CJK KR", arial, 돋움, Dotum, Tahoma, Geneva, sans-serif;
+}
+
+body, h1, h2, p {
+	margin: 0;
+	padding: 0;
+}
+
+a { color: #fff; text-decoration: none; }
+
+header {
+	background-color: #339af0;
+	height: 400px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+
+.survey {
+	margin-top: -57px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-bottom: 20px;
+}
+
+.survey h2{
+	padding: 10px;
+	text-align: center;
+}
+
+.survey__item--active, .result__item--active {
+	color: #fff;
+	background-color: #4dabf7;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table, td, th {  
+	border: 1px solid #ddd;
+	text-align: center;
+}
+
+th, td {
+	padding: 15px;
+	cursor: pointer;
+}
+
+.diabled {
+	background-color: #f1f3f5;
+}
+
+.count {
+	font-size: 20px;
+}
+
+.description {
+	padding: 10px;
+}
+
+@media screen and (min-width: 1080px) {
+	.container {
+		width: 1060px;
+		margin: 0 auto;
+	}
+}

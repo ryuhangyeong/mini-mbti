@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>간이 MBTI</title>
+	<link rel="stylesheet" type="text/css" href="index.css?v=1">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header__inner">
+				<h1>알립니다.</h1>
+				<p>
+					<b><a href="http://www.junggye.or.kr/">한국봉사회 중계종합사회복지관</a></b>에서 작성한 한글 문서를 웹 버전으로 제작하였습니다. <br />저작권에 문제가 있다면 알려주시고 해당 사이트는 저작권자의 요청에 따라 폐쇄될 수 있습니다. 해당 사이트는 비영리입니다.
+				</p>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="survey">
+			<h2 class="survey__title">검사하기</h2>
+			<div class="description">
+				<p>36개의 단어쌍이 있습니다.</p>
+				<p>대부분의 경우, 매 쌍마다 어느 한쪽이 나머지 한쪽에 비해 당신의 유형을 더 잘 표현해주는 것이 있을 것입니다.</p>
+				<p>각 쌍에서 당신이 좋아하는 단어를 채점표에 표시해보세요.</p>
+				<p>너무 깊게 생각하지 말고 느낌이 오는 대로 자신의 성향이고 느끼는 것, 자연스러운 것에 체크하면 됩니다.</p>
+			</div>
+			<table>
+				<tr>
+					<th></th>
+					<th>A</th>
+					<th>B</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td class="survey__item" data-survey-num="1">사람</td>
+					<td class="survey__item" data-survey-num="1">장소</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td class="survey__item" data-survey-num="2">조직</td>
+					<td class="survey__item" data-survey-num="2">자유</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td class="survey__item" data-survey-num="3">숲</td>
+					<td class="survey__item" data-survey-num="3">나무</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td class="survey__item" data-survey-num="4">자비</td>
+					<td class="survey__item" data-survey-num="4">정의</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td class="survey__item" data-survey-num="5">생각</td>
+					<td class="survey__item" data-survey-num="5">행동</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td class="survey__item" data-survey-num="6">조직적(짜여진)</td>
+					<td class="survey__item" data-survey-num="6">융통적(느슨한)</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td class="survey__item" data-survey-num="7">넓다</td>
+					<td class="survey__item" data-survey-num="7">깊다</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td class="survey__item" data-survey-num="8">호기심</td>
+					<td class="survey__item" data-survey-num="8">과단성</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td class="survey__item" data-survey-num="9">사실</td>
+					<td class="survey__item" data-survey-num="9">가능성</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td class="survey__item" data-survey-num="10">머리</td>
+					<td class="survey__item" data-survey-num="10">가슴</td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td class="survey__item" data-survey-num="11">관찰력</td>
+					<td class="survey__item" data-survey-num="11">상상력</td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td class="survey__item" data-survey-num="12">열정</td>
+					<td class="survey__item" data-survey-num="12">일관성</td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td class="survey__item" data-survey-num="13">노는모임</td>
+					<td class="survey__item" data-survey-num="13">도서관</td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td class="survey__item" data-survey-num="14">계획적</td>
+					<td class="survey__item" data-survey-num="14">즉흥적</td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td class="survey__item" data-survey-num="15">이론적</td>
+					<td class="survey__item" data-survey-num="15">실제적</td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td class="survey__item" data-survey-num="16">질문</td>
+					<td class="survey__item" data-survey-num="16">대답</td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td class="survey__item" data-survey-num="17">개인적(사적)</td>
+					<td class="survey__item" data-survey-num="17">공동체적(공적)</td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td class="survey__item" data-survey-num="18">일</td>
+					<td class="survey__item" data-survey-num="18">놀이</td>
+				</tr>
+				<tr>
+					<td>19</td>
+					<td class="survey__item" data-survey-num="19">쓰다</td>
+					<td class="survey__item" data-survey-num="19">말하다</td>
+				</tr>
+				<tr>
+					<td>20</td>
+					<td class="survey__item" data-survey-num="20">냉정하다</td>
+					<td class="survey__item" data-survey-num="20">따뜻하다</td>
+				</tr>
+				<tr>
+					<td>21</td>
+					<td class="survey__item" data-survey-num="21">도시</td>
+					<td class="survey__item" data-survey-num="21">숲</td>
+				</tr>
+				<tr>
+					<td>22</td>
+					<td class="survey__item" data-survey-num="22">지배인</td>
+					<td class="survey__item" data-survey-num="22">기업가</td>
+				</tr>
+				<tr>
+					<td>23</td>
+					<td class="survey__item" data-survey-num="23">느긋하다</td>
+					<td class="survey__item" data-survey-num="23">조급하다</td>
+				</tr>
+				<tr>
+					<td>24</td>
+					<td class="survey__item" data-survey-num="24">진실</td>
+					<td class="survey__item" data-survey-num="24">재치</td>
+				</tr>
+				<tr>
+					<td>25</td>
+					<td class="survey__item" data-survey-num="25">생산</td>
+					<td class="survey__item" data-survey-num="25">디자인</td>
+				</tr>
+				<tr>
+					<td>26</td>
+					<td class="survey__item" data-survey-num="26">질서</td>
+					<td class="survey__item" data-survey-num="26">조화</td>
+				</tr>
+				<tr>
+					<td>27</td>
+					<td class="survey__item" data-survey-num="27">보다</td>
+					<td class="survey__item" data-survey-num="27">뛰다</td>
+				</tr>
+				<tr>
+					<td>28</td>
+					<td class="survey__item" data-survey-num="28">가치</td>
+					<td class="survey__item" data-survey-num="28">논리</td>
+				</tr>
+				<tr>
+					<td>29</td>
+					<td class="survey__item" data-survey-num="29">통찰력</td>
+					<td class="survey__item" data-survey-num="29">감각</td>
+				</tr>
+				<tr>
+					<td>30</td>
+					<td class="survey__item" data-survey-num="30">공평</td>
+					<td class="survey__item" data-survey-num="30">친절</td>
+				</tr>
+				<tr>
+					<td>31</td>
+					<td class="survey__item" data-survey-num="31">변화하다</td>
+					<td class="survey__item" data-survey-num="31">보존하다</td>
+				</tr>
+				<tr>
+					<td>32</td>
+					<td class="survey__item" data-survey-num="32">시작하다</td>
+					<td class="survey__item" data-survey-num="32">끝내다</td>
+				</tr>
+				<tr>
+					<td>33</td>
+					<td class="survey__item" data-survey-num="33">거북이</td>
+					<td class="survey__item" data-survey-num="33">토끼</td>
+				</tr>
+				<tr>
+					<td>34</td>
+					<td class="survey__item" data-survey-num="34">관계중심적</td>
+					<td class="survey__item" data-survey-num="34">분석적</td>
+				</tr>
+				<tr>
+					<td>35</td>
+					<td class="survey__item" data-survey-num="35">토론하다</td>
+					<td class="survey__item" data-survey-num="35">생각하다</td>
+				</tr>
+				<tr>
+					<td>36</td>
+					<td class="survey__item" data-survey-num="36">과정</td>
+					<td class="survey__item" data-survey-num="36">결과</td>
+				</tr>
+			</table>
+			<div class="result">
+				<h2>채점표</h2>
+				<div class="description">
+					<p>1. a, b중 자기가 선택한 것을 채점표에 표시합니다.</p>
+					<p>2. 수직으로 (E, I, S, N) 표시한 답변수를 세어 밑에 표시합니다.</p>
+					<p>3. 수직으로 2개씩, 4가지로 배열되어 있음을 명심하세요. 즉, E/I, S/N, T/F, J/P로 되어있습니다.</p>
+					<p>각 그룹에서 표시가 더 많이 된 철자를 맨 밑에 기록합니다.</p>
+				</div>
+				<table id="result_table_first">
+					<tr>
+						<th>번호</th>
+						<th>E</th>
+						<th>I</th>
+						<th>S</th>
+						<th>N</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>A</td>
+						<td>B</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>B</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>B</td>
+						<td>A</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>A</td>
+						<td>B</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>A</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>A</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>13</td>
+						<td>A</td>
+						<td>B</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>B</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>17</td>
+						<td>B</td>
+						<td>A</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>19</td>
+						<td>B</td>
+						<td>A</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>21</td>
+						<td>A</td>
+						<td>B</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>23</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>A</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>25</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>A</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>27</td>
+						<td>B</td>
+						<td>A</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>29</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>B</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>31</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>B</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>33</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>A</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>35</td>
+						<td>A</td>
+						<td>B</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<th>합계</th>
+						<th>E<br /><span id="count_E" class="count"></span></th>
+						<th>I<br /><span id="count_I" class="count"></span></th>
+						<th>S<br /><span id="count_S" class="count"></span></th>
+						<th>N<br /><span id="count_N" class="count"></span></th>
+					</tr>
+				</table>
+			</div>
+			<div class="result">
+				<h2 class="survey__title">채점표</h2>
+				<table id="result_table_second">
+					<tr>
+						<th>번호</th>
+						<th>T</th>
+						<th>F</th>
+						<th>J</th>
+						<th>P</th>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>A</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>B</td>
+						<td>A</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>A</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>B</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>A</td>
+						<td>B</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>B</td>
+						<td>A</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>14</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>A</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>16</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>B</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>A</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>A</td>
+						<td>B</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>A</td>
+						<td>B</td>
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>A</td>
+						<td>B</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>26</td>
+						<td>A</td>
+						<td>B</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>28</td>
+						<td>B</td>
+						<td>A</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>30</td>
+						<td>A</td>
+						<td>B</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>32</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>B</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<td>34</td>
+						<td>B</td>
+						<td>A</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+					</tr>
+					<tr>
+						<td>36</td>
+						<td class="diabled"></td>
+						<td class="diabled"></td>
+						<td>B</td>
+						<td>A</td>
+					</tr>
+					<tr>
+						<th>합계</th>
+						<th>T<br /><span id="count_T" class="count"></span></th>
+						<th>F<br /><span id="count_F" class="count"></span></th>
+						<th>J<br /><span id="count_J" class="count"></span></th>
+						<th>P<br /><span id="count_P" class="count"></span></th>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="jquery.min.js"></script>
+	<script src="index.js?v=1"></script>
+</body>
+</html>
